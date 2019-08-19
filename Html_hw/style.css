@@ -10,10 +10,11 @@ h1 {
     background-color: grey;
     font-family: Arial;
   }
-  
+  .right{
+    float:right;
+  }
   /* Links inside the navbar */
   .navbar a {
-    float: left;
     font-size: 18px;
     color: white;
     text-align: center;
@@ -23,7 +24,7 @@ h1 {
   
   /* The dropdown container */
   .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
   }
   
@@ -92,9 +93,9 @@ section {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: gray;
-  text-align: right
+  text-align: left
 }
 
 ul {

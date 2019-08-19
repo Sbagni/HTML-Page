@@ -8,18 +8,18 @@
   <title>Latitude</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <div class="navbar">
-    <a href="#latitude">Latitude</a>
-    <a href="#comaprison">Comparison</a>
-    <a href="#data">Data</a>
+    <a style = "float:left;" href = "index.html">Latitude</a>
+    <a class = "right" href = "compare.html">Comparison</a>
+    <a class = "right" href="data.html">Data</a>
     <div class="dropdown">
-        <button class="dropbtn">Plot 
+        <button class="dropbtn right">Plot 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Max Temperature</a>
-          <a href="#">Humidity</a>
-          <a href="#">Cloudiness</a>
-          <a href="#">Wind Speed</a>
+          <a href="Resources/assets/images/Fig1.png">Max Temperature</a>
+          <a href="Resources/assets/images/Fig2.png">Humidity</a>
+          <a href="Resources/assets/images/Fig3.png">Cloudiness</a>
+          <a href="Resources/assets/images/Fig4.png">Wind Speed</a>
         </div>
       </div> 
     </div>
@@ -28,56 +28,15 @@
   <section>
       <h1>Comparison Summary:Latitude vs X</h1>
       <article>
-            <a target="_blank" href="Resources/assets/images/Fig1.png">
-              <img src="Resources/assets/images/Fig1.png" alt="Max Temperature"style="float:top-left;width:250px;height:300px;">
-            </a>
-            <p>The purpose of this project was to analyse how weather changes as you get closer to the equator.To accompolish this analysis we first pulled data from open weather API to assemble a dataset over 500 hundred cities.</p>
-          <br>
-          <p>After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude.Factors we looked at included: temperature, Cloudiness,humidity and wind speed.This site provides the source data and visualisations created as part of the analysis, as well as explanations and desciptions of any trends and correlations witnessed.</p>
-      </article>
-      <h2>Comparison: Latitude vs X</h2>
-    <p>Click any plot to get in-depth analysis</p>
-    <a href="Resources/assets/images/Fig1.png">
-        <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" style="float:top-left;width:350px;height:400px;">
-    </a>
-    <a href="Resources/assets/images/Fig2.png">
-        <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="float:top-right;width:350px;height:400px;">
-    </a>
-    <a href="Resources/assets/images/Fig3.png">
-        <img src="Resources/assets/images/Fig3.png" alt="Cloudines" style="float:bottom-left;width:350px;height:400px;">
-    </a>
-    <a href="Resources/assets/images/Fig4.png">
-            <img src="Resources/assets/images/Fig4.png" alt="Wind speed" style="float:bottom-right;width:350px;height:400px;">
-        </a>
-    <article>
-    <a target="_blank" href="Resources/assets/images/Fig1.png">
-      <img src="Resources/assets/images/Fig1.png" alt="Max Temperature">
-    </a>
-    <p><em>Max Temperature</em></p>
-    </article>
-    <hr>
-    <article>
-    <a target="_blank" href="Resources/assets/images/Fig2.png">
-    <img src="Resources/assets/images/Fig2.png" alt="Humidity">
-    </a>
-    <p><em>Humidity </em></p>
-    </article>
-    <hr>
-    <article>
-      <a href="Resources/assets/images/Fig3.png">
-      <img target="_blank" src="Resources/assets/images/Fig3.png" alt="Cloudiness">
-      </a>
-      <p><em>Cloudiness</em></p>
-    </article>
-    <hr>
-    <!-- an example using figure/ficaption -->
-    <figure>
-      <a target="_blank" href="Resources/assets/images/Fig4.png">
-      <img src="Resources/assets/images/Fig4.png" alt="Wind speed">
-      </a>
-      <figcaption><em>Wind speed</em></figcaption>
-    </figure>
-  </section>
-</body>
-
-</html>
+          <div class="container-fluid">
+                <div class="col-md-6">
+                    <a target="_blank" href="Resources/assets/images/Fig1.png">
+                      <img src="Resources/assets/images/Fig1.png" alt="Max Temperature"style="float:top-left;width:250px;height:300px;">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <p>The purpose of this project was to analyse how weather changes as you get closer to the equator.To accompolish this analysis we first pulled data from open weather API to assemble a dataset over 500 hundred cities.</p>
+                    <p>After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude.Factors we looked at included: temperature, Cloudiness,humidity and wind speed.This site provides the source data and visualisations created as part of the analysis, as well as explanations and desciptions of any trends and correlations witnessed.</p>
+                 </div>
+            </div>
+      </html>
