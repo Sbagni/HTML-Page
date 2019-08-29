@@ -3,40 +3,91 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Latitude</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <div class="navbar">
-    <a style = "float:left;" href = "index.html">Latitude</a>
-    <a class = "right" href = "compare.html">Comparison</a>
-    <a class = "right" href="data.html">Data</a>
-    <div class="dropdown">
-        <button class="dropbtn right">Plot 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="Resources/assets/images/Fig1.png">Max Temperature</a>
-          <a href="Resources/assets/images/Fig2.png">Humidity</a>
-          <a href="Resources/assets/images/Fig3.png">Cloudiness</a>
-          <a href="Resources/assets/images/Fig4.png">Wind Speed</a>
-        </div>
-      </div> 
-    </div>
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <section>
-      <h1>Comparison Summary:Latitude vs X</h1>
-      <article>
-          <div class="container-fluid">
-                <div class="col-md-6">
-                    <a target="_blank" href="Resources/assets/images/Fig1.png">
-                      <img src="Resources/assets/images/Fig1.png" alt="Max Temperature"style="float:top-left;width:250px;height:300px;">
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <p>The purpose of this project was to analyse how weather changes as you get closer to the equator.To accompolish this analysis we first pulled data from open weather API to assemble a dataset over 500 hundred cities.</p>
-                    <p>After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude.Factors we looked at included: temperature, Cloudiness,humidity and wind speed.This site provides the source data and visualisations created as part of the analysis, as well as explanations and desciptions of any trends and correlations witnessed.</p>
-                 </div>
-            </div>
-      </html>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="compare.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="row" style= "margin-top:100px">
+    <div class="col-md-7" style="margin-left:50px">
+      <h1>Comparison Summary:Latitude vs X </h1>
+      <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" style="float:left;width:350px;"></a>
+      <p>The purpose of this project was to analyse how weather changes as you get closer to the equator.To
+        accompolish this analysis we first pulled data from open weather API to assemble a dataset over 500 hundred
+        cities.After assembling the dataset we used matplotlib to plot various aspects of the weather vs latitude.Factors we
+        looked at included: temperature, Cloudiness,humidity and wind speed.This site provides the source data and
+        visualisations created as part of the analysis, as well as explanations and desciptions of any trends and
+        correlations witnessed.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Visualisations</h2>
+        <div class = "row">
+        <div class="col-md-6">
+            <a href="max_temp.html">
+          <img src="Resources/assets/images/Fig1.png" style="width:300px;">
+          </a>
+       </div>
+        <div class="col-md-6">
+            <a href="humidity.html">
+            <img src="Resources/assets/images/Fig2.png" style="width:300px;">
+          </a>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-md-6">
+              <a href="cloudiness.html">
+              <img src="Resources/assets/images/Fig3.png" style="width:300px;">
+              </a>
+        </div>
+        <div class="col-md-6">
+            <a href="wind_speed.html">
+            <img src="Resources/assets/images/Fig4.png" style="width:300px;">
+          </a>
+        </div>
+      </div>
+     </div>
+    </div>
+</body>
+
+</html>
