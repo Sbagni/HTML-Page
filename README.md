@@ -1,6 +1,6 @@
 **Latitude Analysis Dashboard**
 
-Data is more powerful when we share it with others!  We used HTML and CSS to create a dashboard showing off the analysis we've done.
+Data is more powerful when we share it with others. I used HTML and CSS to create a dashboard to display the analysis done.
 
 For this project we created a visualization dashboard website using visualizations we've created in a previous assignment. Specifically, we plotted [weather data](Resources/cities.csv).
 
